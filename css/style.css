@@ -10,11 +10,12 @@
 
 main{
     min-width: 100vw;
-    min-height: calc(100vh - 12px);
+    min-height: calc(100vh - 14px);
     background-color: hsl(30, 38%, 92%);
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .container{
