@@ -27,6 +27,7 @@ main{
 
 
 
+/* SECTION LEFT */
 .section-left{
     width: 50%;
     height: 100%;
@@ -38,6 +39,7 @@ main{
 
 
 
+/* SECTION RIGHT */
 .section-right{
     width: 50%;
     height: 100%;
@@ -48,6 +50,7 @@ main{
 
 
 
+/* PRODUCT */
 .product{
     margin-bottom: 20px;
 }
@@ -63,7 +66,7 @@ main{
 
 
 
-
+/* TITLE */
 .title{
     font-family: 'Fraunces', serif;
     font-weight: 700;
@@ -74,7 +77,7 @@ main{
 
 
 
-
+/* PARAGRAPH */
 .section-right p{
     font-family: 'Montserrat', sans-serif, Arial;
     margin-top: 20px;
@@ -86,7 +89,7 @@ main{
 
 
 
-
+/* PRICE */
 .price{
     display: flex;
     margin-bottom: 30px;
@@ -107,7 +110,7 @@ main{
 
 
 
-
+/* BUTTON */
 button{
     font-family: 'Montserrat', sans-serif, Arial;
     width: 100%;
@@ -133,7 +136,7 @@ button:hover{
 
 
 
-
+/* FOOTER */
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -142,4 +145,85 @@ button:hover{
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width:610px) {
+    .container{
+        padding: 10px;
+    }
+
+    .price{
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media (max-width: 520px){
+    .container{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .section-left{
+        width: 300px;
+        height: 40%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-image: url(../images/image-product-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .section-right{
+        width: 300px;
+        height: 60%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 15px;
+    }
+
+
+    .product{
+        margin-bottom: 10px;
+    }
+
+
+    .title{
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+
+    .section-right p{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+
+    .price{
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .price h2{
+        font-size: 25px;
+    }
+    
+    button{
+        height: 40px;
+    }
+
+    button h1{
+        font-size: 15px;
+    }
 }
